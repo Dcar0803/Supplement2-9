@@ -33,6 +33,15 @@ public class Project2 {
 	}//end of getEvenNumbers method
 	
 	
+	
+	 /**
+     * Converts all characters in the given string to uppercase.
+     * 
+     * @param input The string to convert.
+     * @return A new string with all characters in uppercase.
+     */
+	
+	
 	public static String convertToUpperCase(String input) {
         
 		if (input == null) {
