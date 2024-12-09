@@ -36,5 +36,24 @@ class Testing {
 	        assertEquals("Input string cannot be null.", exception.getMessage(), "Expected IllegalArgumentException for null input.");
 	    
 	 }//end of testConverttoUpperCase
+	 
+	 
+	 @Test
+	    public void testGetLongestString() {
+		 
+	        List<String> input = Arrays.asList("short", "longeststring", "medium");
+	        String expected = "longeststring";
+
+	        String actual = Project2.getLongestString(input);
+
+	        assertEquals(expected, actual, "getLongestString() did not return the expected longest string.");
+
+	        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+	            Project2.getLongestString(Arrays.asList());
+	        });
+
+	        assertEquals("Input list cannot be null or empty.", exception.getMessage(), "Expected IllegalArgumentException for empty input list.");
+	    
+	 }//end of testGetLongestString method
 
 }//end of class
