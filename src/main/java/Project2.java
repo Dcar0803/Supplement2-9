@@ -1,4 +1,4 @@
-
+import java.lang.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -31,5 +31,18 @@ public class Project2 {
         return evens;
     
 	}//end of getEvenNumbers method
+	
+	
+	public static String convertToUpperCase(String input) {
+        
+		if (input == null) {
+            
+        	throw new IllegalArgumentException("Input string cannot be null.");
+        
+        }//end of if statement
+        
+        return input.toUpperCase();
+    
+	}//end of convertToUpperCase
 
 }//end of class 
