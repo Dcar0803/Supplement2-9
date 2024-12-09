@@ -53,5 +53,32 @@ public class Project2 {
         return input.toUpperCase();
     
 	}//end of convertToUpperCase
+	
+	
+	
+	
+	public static String getLongestString(List<String> strings) {
+		
+        if (strings == null || strings.isEmpty()) {
+        	
+            throw new IllegalArgumentException("Input list cannot be null or empty.");
+        
+        }//end of if statement 
+        
+        String longest = "";
+        
+        for (String str : strings) {
+            
+        	if (str.length() > longest.length()) {
+                
+            	longest = str;
+                
+            }//end of if statement
+            
+        }//end of for loop 
+        
+        return longest;
+    
+	}//end of getLongestString
 
 }//end of class 
