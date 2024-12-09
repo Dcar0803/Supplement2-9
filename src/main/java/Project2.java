@@ -56,6 +56,13 @@ public class Project2 {
 	
 	
 	
+	 /**
+     * Returns the longest string in the given list of strings.
+     * 
+     * @param strings List of strings to evaluate.
+     * @return The longest string. If multiple strings have the same length, returns the first.
+     */
+	
 	
 	public static String getLongestString(List<String> strings) {
 		
