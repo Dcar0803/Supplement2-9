@@ -18,5 +18,23 @@ class Testing {
 
 	        assertEquals(expected, actual, "getEvenNumbers() did not return the expected list of even numbers.");
 	    }//end of testGetEvenNumbers method
+	 
+	 
+	 @Test
+	    public void testConvertToUpperCase() {
+	        String input = "hello world";
+	        String expected = "HELLO WORLD";
+
+	        String actual = Project2.convertToUpperCase(input);
+
+	        assertEquals(expected, actual, "convertToUpperCase() did not return the expected uppercase string.");
+
+	        Exception exception = assertThrows(IllegalArgumentException.class, () -> {
+	            Project2.convertToUpperCase(null);
+	        });
+
+	        assertEquals("Input string cannot be null.", exception.getMessage(), "Expected IllegalArgumentException for null input.");
+	    
+	 }//end of testConverttoUpperCase
 
 }//end of class
