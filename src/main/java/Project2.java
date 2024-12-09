@@ -6,6 +6,14 @@ import java.util.List;
 
 public class Project2 {
 	
+
+    /**
+     * Returns all even numbers in the given list.
+     * 
+     * @param numbers List of integers to filter.
+     * @return List of even integers.
+     */
+	
 	
 	public static List<Integer> getEvenNumbers(List<Integer> numbers) {
         
